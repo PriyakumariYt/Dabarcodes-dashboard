@@ -11,7 +11,7 @@
 // import Footer from '../../components/Footer';
 
 
-
+// add data
 // const Setting = () => {
 //   return (
     

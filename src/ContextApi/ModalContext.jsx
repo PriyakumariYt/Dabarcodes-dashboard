@@ -3,6 +3,15 @@ import React, { createContext, useContext, useState } from "react";
 const ModalContext = createContext();
 
 export const ModalProvider = ({ children }) => {
+  // const [isUnlinkItemModal, SetUnlinkItemModal] = useState(false);
+  // const [isLinkItemModal, SetLinkItemModal] = useState(false);
+
+  //  const openUnlinkItemModal = () => SetUnlinkItemModal(true);
+  //  const closeUnlinkItemModal = () => SetUnlinkItemModal(false);
+
+  //  const openLinkItemModal = () => SetLinkItemModal(true);
+  //  const closeLinkItemModal = () => SetLinkItemModal(false);
+
   const [isRoleModalOpen, setIsRoleModalOpen] = useState(false);
   const [isConnectWalletModalOpen, setIsConnectWalletModalOpen] =
     useState(false);
@@ -76,7 +85,7 @@ const closeNotifications = () => {
         // isNotificitionsOn,
         // isCoupanOn,
         //
-        
+
         isTokenOpen,
         openToken,
         closeToken,
@@ -84,9 +93,9 @@ const closeNotifications = () => {
         openProfile,
         closeProfile,
         //
-       
-        isNotificationsOn, 
-        openNotifications, 
+
+        isNotificationsOn,
+        openNotifications,
         closeNotifications,
         //
         openCoupan,
@@ -95,10 +104,11 @@ const closeNotifications = () => {
         // openLinkedSKU,
         // closeLinkedSKU,
         // linkedSKU,
-        linkedSKU, openLinkedSku, closeLinkedSKU,
+        linkedSKU,
+        openLinkedSku,
+        closeLinkedSKU,
         //
-        
-        
+
         isSingleQR,
         openQR,
         closeQR,
@@ -106,6 +116,16 @@ const closeNotifications = () => {
         isMultiQR,
         openMultiQR,
         closeMultiQR,
+
+        ////
+        //
+        // isUnlinkItemModal,
+        // openUnlinkItemModal,
+        // closeUnlinkItemModal,
+        // //
+        // isLinkItemModal,
+        // openLinkItemModal,
+        // closeLinkItemModal,
       }}
     >
       {children}
